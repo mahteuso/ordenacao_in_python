@@ -18,7 +18,6 @@ def shell_sort(l):
                 j -= meio
             l[j+meio] = key
         meio = (meio // 2)
-
     return l
 inicio = time.time()
 print(shell_sort(l))
