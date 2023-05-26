@@ -28,7 +28,7 @@ def selection_sort(l):
 
 
     for i in range(len(l) - 1):
-   
+
         menor = i
         j = i + 1
         while j < len(l):
@@ -42,4 +42,6 @@ def selection_sort(l):
 
     return l
 
-print(selection_sort(l))
+#print(selection_sort(l))
+
+

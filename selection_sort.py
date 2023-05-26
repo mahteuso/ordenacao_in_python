@@ -1,7 +1,7 @@
 """Estudando o algoritmo de ordenação Selection sort"""
 import random
-
-l = list(range(20))
+import time
+l = list(range(1000))
 random.shuffle(l)
 print(l)
 
@@ -21,4 +21,9 @@ def selection_sort(l):
 
     return l
 
+inicial = time.time()
 print(selection_sort(l))
+final = time.time()
+
+total = (final - inicial)*1000
+print(f'Tempo total: {total}ms')

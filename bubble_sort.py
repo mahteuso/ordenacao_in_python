@@ -1,8 +1,9 @@
 """Estudando o algoritmo de ordenação Bubble sort"""
 
 import random
+import time
 
-l = list(range(0, 5))
+l = list(range(1000))
 random.shuffle(l)
 print(l)
 
@@ -17,9 +18,11 @@ def booble_sort(l):
             i += 1
         tam -= 1
     return l
-
-#print(booble_sort(l))
-
+antes = time.time()
+print(booble_sort(l))
+depois = time.time()
+total = (depois - antes)*1000
+print(f'tempo total: {total}ms')
 
 
 
