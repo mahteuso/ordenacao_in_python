@@ -11,12 +11,13 @@ def shell_sort(l):
     meio = (len(l) // 2)
     while meio > 0:
         for i in range(meio, len(l)):
-            key = l[meio]
+            key = l[i]
             j = i - meio
             while j >= 0 and l[j] > key:
                 l[j+meio] = l[j]
                 j -= meio
             l[j+meio] = key
+
         meio = (meio // 2)
     return l
 inicio = time.time()
