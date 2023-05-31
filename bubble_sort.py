@@ -3,7 +3,7 @@
 import random
 import time
 
-l = list(range(1000))
+l = list(range(20))
 random.shuffle(l)
 print(l)
 
